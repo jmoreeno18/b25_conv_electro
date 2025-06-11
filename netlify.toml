@@ -1,0 +1,12 @@
+[build]
+  # Comando para construir la app y el servidor SSR
+  command = "npm run build:ssr"
+
+  # Carpeta que Netlify debe publicar para la web (la parte cliente)
+  publish = "dist/b25_conv_electro/browser"
+
+  # Carpeta donde están las funciones server-side (SSR)
+  functions = "dist/b25_conv_electro/server"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
