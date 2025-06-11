@@ -1,11 +1,38 @@
+<div class="text-black flex flex-col items-center pt-7 justify-center mb-4">
+  <h2 class="text-xl font-semibold mb-4">Iniciar sesión para prueba</h2>
+  <ul class="bg-gray-100 p-4 rounded-lg shadow-md text-sm space-y-2">
+    <li>
+      <strong>Super admin: </strong>
+      <span class="text-blue-700">super&#64;admin.com</span>
+    </li>
+    <li>
+      <strong>Contraseña: </strong>
+      <span class="text-blue-700">123456</span>
+    </li>
+    <li>
+      <strong>Admin: </strong>
+      <span class="text-blue-700">super&#64;usuario.com</span>
+    </li>
+    <li>
+      <strong>Contraseña: </strong>
+      <span class="text-blue-700">123456</span>
+    </li>
+    <li>
+      <strong>Usuario alumno: </strong>
+      <span class="text-blue-700">usuario&#64;alumno.com</span>
+    </li>
+    <li>
+      <strong>Contraseña: </strong>
+      <span class="text-blue-700">123456</span>
+    </li>
+  </ul>
+</div>
+
 <div *ngIf="loading" class="flex justify-center items-center h-screen">
   <span class="loading loading-spinner loading-lg text-primary"></span>
 </div>
 
-<div
-  *ngIf="!loading"
-  class="flex items-center justify-center min-h-screen bg-base-100"
->
+<div *ngIf="!loading" class="flex justify-center bg-base-100">
   <form [formGroup]="loginForm" class="w-full max-w-3xl h-4/5">
     <fieldset
       class="flex flex-col fieldset bg-base-200 border-base-300 rounded-box border p-8 w-4/5 mx-auto"
